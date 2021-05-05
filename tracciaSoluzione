@@ -1,0 +1,40 @@
+MATRICE 4X4
+APPROCCIO 1:
+Data una parola, questa è presente nella griglia?
+	Stringa da riconoscere 'parola'
+	Contenuto della Board
+	Posizione della lettera iniziale
+	
+Soluzione parziale:
+	la parte iniziale della parola, quella che ho già riconosciuto
+	es(cerco PIPPO, la sol. parziale sarà P, PI..)
+	elenco delle posizioni in cui si trovano le lettere già riconosciute
+	
+Soluzione totale:
+	parola completamente riconosciuta
+	elenco delle posizioni in cui si trovano le lettere della parola
+	
+Livello ricorsione:
+	numero di caratteri già riconosciuti
+
+Condizioni di terminazione:
+	livello = lunghezza della parola
+	se viene trovata la solzione -> interrompo subito la ricerca
+	(non voglio fare backtracking)
+	
+Avvio della ricorsione
+	livello = 1
+	parto da una posizione che contiene la prima lettera della parola
+	
+Strutture dati che ci servono:
+	String da riconoscere 'parola'
+	int livello
+	List<Pos> 'percorso' corrispondente alla sequenza di caselle
+	
+
+
+
+
+
+APPROCCIO 2:
+Provo tutti i percorsi possibili del mio ruzzle
